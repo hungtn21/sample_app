@@ -1,65 +1,54 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'sidebar';
+@import 'form';
 
-/* universal */
 body {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 section {
-    overflow: auto;
+  overflow: auto;
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .center h1 {
-    margin-bottom: 10px;
-}
-
-.form-label {
-    display: block;
-}
-
-.form-errors {
-    color: red;
-    margin-bottom: 1rem;
-}
-
-.form-control {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1rem;
-}
-
-.form-group {
-    margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 .notice-message {
-    color: green;
+  color: green;
 }
 
 #logo {
-    /* Layout */
-    float: left;
-    margin-right: 10px;
-    padding-top: 9px;
+  /* Layout */
+  float: left;
+  margin-right: 10px;
+  padding-top: 9px;
 
-    /* Typography */
-    color: #fff;
-    font-size: 1.7em;
-    font-weight: bold;
-    letter-spacing: -1px;
-    text-transform: uppercase;
+  /* Typography */
+  color: #fff;
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
 #logo:hover {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
 }

@@ -3,5 +3,18 @@ vi:
     new:
       title: "Đăng ký"
       heading: "Đăng ký"
+      name: "Tên"
+      email: "Email"
       password_confirmation: "Xác nhận mật khẩu"
+      birthday: "Ngày sinh"
+      day: "Ngày"
+      month: "Tháng"
+      year: "Năm"
+      gender: "Giới tính"
+      gender_male: "Nam"
+      gender_female: "Nữ"
+      gender_other: "Khác"
+      gender_prompt: "Chọn giới tính"
       submit: "Tạo tài khoản"
+    create:
+      success: "Người dùng đã được tạo thành công."

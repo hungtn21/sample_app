@@ -11,24 +11,19 @@ vi:
     help: "Trợ giúp"
     login: "Đăng nhập"
     contact: "Liên hệ"
-  activerecord:
-    attributes:
-      micropost:
-        content: "Nội dung"
-      user:
-        name: "Tên"
-        email: "Email"
-        password: "Mật khẩu"
-        password_confirmation: "Xác nhận mật khẩu"
-        birthday: "Ngày sinh"
-    errors:
-        models:
-          user:
-            attributes:
-              birthday:
-                birthday_year_validation: "phải trong vòng %{count} năm qua"
   switch:
     en: "Tiếng Anh"
     vi: "Tiếng Việt"
   app:
     base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+  errors:
+    template:
+      header:
+        one: "Biểu mẫu có 1 lỗi"
+        other: "Biểu mẫu có %{count} lỗi"
+      body: "Vui lòng kiểm tra các trường sau:"
+  date:
+    order: 
+      - :day
+      - :month
+      - :year

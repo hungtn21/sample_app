@@ -11,24 +11,19 @@ en:
     help: "Help"
     login: "Log in"
     contact: "Contact"
-  activerecord:
-    attributes:
-      micropost:
-        content: "Content"
-      user:
-        name: "Name"
-        email: "Email"
-        password: "Password"
-        password_confirmation: "Password confirmation"
-        birthday: "Birthday"
-    errors:
-        models:
-          user:
-            attributes:
-              birthday:
-                birthday_year_validation: "must be within the last %{count} years"
   switch:
     en: "English"
     vi: "Vietnamese"
   app:
     base_title: "Ruby on Rails Tutorial Sample App"
+  errors:
+    template:
+      header:
+        one: "1 error prohibited this record from being saved"
+        other: "%{count} errors prohibited this record from being saved"
+      body: "There were problems with the following fields:"
+  date:
+    order: 
+      - :day
+      - :month
+      - :year

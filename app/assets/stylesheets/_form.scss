@@ -1,0 +1,36 @@
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px;
+  }
+}
+
+.form-label {
+  display: block;
+}
+
+.form-errors {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}

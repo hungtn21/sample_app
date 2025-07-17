@@ -1,7 +1,20 @@
 en:
   users:
     new:
-      title: "Signup"
-      heading: "Signup"
+      title: "Sign Up"
+      heading: "Sign Up"
+      name: "Name"
+      email: "Email"
       password_confirmation: "Confirm Password"
+      birthday: "Birthday"
+      day: "Day"
+      month: "Month"
+      year: "Year"
+      gender: "Gender"
+      gender_male: "Male"
+      gender_female: "Female"
+      gender_other: "Other"
+      gender_prompt: "Select Gender"
       submit: "Create Account"
+    create:
+      success: "User was successfully created."
