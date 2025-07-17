@@ -11,7 +11,10 @@ class UsersController < ApplicationController
   end
 
   # GET /users/:id
-  def show; end
+  def show
+    @page, @microposts = pagy(@user.microposts.newest,
+                              items: Settings.defaults.user.items_per_page)
+  end
 
   # POST /signup
   def create

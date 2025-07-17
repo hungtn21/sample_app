@@ -1,0 +1,43 @@
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+.micropost {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 15px;
+
+  .micropost-body {
+    .user {
+      font-weight: bold;
+      display: block;
+    }
+
+    .content {
+      display: block;
+      margin-top: 5px;
+    }
+
+    .timestamp {
+      color: #999;
+      display: block;
+      font-size: 0.875em;
+      margin-top: 2px;
+    }
+  }
+
+  .gravatar {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+}

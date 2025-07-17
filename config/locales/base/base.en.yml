@@ -33,3 +33,32 @@ en:
       - :day
       - :month
       - :year
+  datetime:
+    distance_in_words:
+      half_a_minute: "less than a minute"
+      less_than_x_seconds: "less than %{count} seconds"
+      x_seconds: "%{count} seconds"
+      one_minute: "1 minute"
+      x_minutes: "%{count} minutes"
+      less_than_x_minutes: "less than %{count} minutes"
+      about_x_hours:
+        one: "about 1 hour"
+        other: "about %{count} hours"
+      x_days:
+        one: "1 day"
+        other: "%{count} days"
+      about_x_months:
+        one: "about 1 month"
+        other: "about %{count} months"
+      x_months:
+        one: "1 month"
+        other: "%{count} months"
+      about_x_years:
+        one: "about 1 year"
+        other: "about %{count} years"
+      over_x_years:
+        one: "over 1 year"
+        other: "over %{count} years"
+      almost_x_years:
+        one: "almost 1 year"
+        other: "almost %{count} years"

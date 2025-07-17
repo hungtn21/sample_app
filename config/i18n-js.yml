@@ -1,0 +1,4 @@
+translations:
+  - file: "app/javascript/custom/translations.js"
+    patterns:
+      - "*"

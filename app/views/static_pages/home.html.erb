@@ -1,8 +1,28 @@
 <% provide(:title, t("static_pages.home.title")) %>
-<h1><%= t("static_pages.home.heading") %></h1>
-
-<p>
-  <%= t("static_pages.home.description") %>
-  <%= link_to t("static_pages.home.link_text"), Settings.book_link %>
-  <%= t("static_pages.home.suffix") %>
-</p>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render "shared/user_info" %>
+      </section>
+      <section class="micropost_form">
+        <%= render "shared/micropost_form" %>
+      </section>
+    </aside>
+      <div class="col-md-8">
+        <h3><%= t("microposts.index.title") %></h3>
+        <%= render "shared/feed" %>
+      </div>
+  </div>
+<% else %>
+  <h1><%= t(".heading") %></h1>
+  <p>
+    <%= t(".description") %>
+    <%= link_to t(".link_text"), Settings.book_link %>
+    <%= t(".suffix") %>
+  </p>
+  <p>
+    <%= t(".signup_prompt") %>
+    <%= link_to t(".signup_link"), signup_path %>
+  </p>
+<% end %>

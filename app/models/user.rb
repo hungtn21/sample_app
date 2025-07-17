@@ -7,6 +7,8 @@ gender).freeze
 
   enum gender: {female: 0, male: 1, other: 2}
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true, length:
                     {maximum: Settings.defaults.user.max_name_length}
   validates :email, presence: true, length:
@@ -81,6 +83,10 @@ gender).freeze
 
   def send_password_reset_confirmation_email
     UserMailer.password_reset_confirmation(self).deliver_now
+  end
+
+  def feed
+    microposts
   end
 
   private

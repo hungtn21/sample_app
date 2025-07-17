@@ -4,7 +4,7 @@ class PasswordResetsController < ApplicationController
   before_action :check_expiration, only: %i(edit update)
   before_action :check_empty_password, only: :update
   before_action :load_user_from_password_reset_params, only: :create
-  
+
   # GET /password_resets/new
   def new; end
 

@@ -1,13 +1,18 @@
 vi:
   microposts:
-    created: "Bài đăng đã được tạo thành công."
+    create:
+      success: "Bài đăng đã được tạo thành công."
+      failed: "Không thể tạo bài đăng."
     updated: "Bài đăng đã được cập nhật thành công."
     destroy:
+      title: "Xóa bài viết"
       success: "Bài đăng đã được xóa thành công."
       failed: "Không thể xóa bài viết."
+      confirm: "Bạn có chắc chắn muốn xóa bài viết này không?"
     not_found: "Không tìm thấy bài viết."
     content: "Nội dung"
     form:
+      placeholder: "Viết bài đăng của bạn ở đây..."
       errors:
         title: "%{count} lỗi đã ngăn không cho micropost được lưu:"
       submit: "Lưu bài viết"
@@ -16,7 +21,7 @@ vi:
       show_link: "Xem bài viết này"
       back_link: "Quay lại danh sách"
     index:
-      title: "Danh sách bài viết"
+      title: "Bài viết"
       show_link: "Xem bài viết này"
       new_link: "Tạo bài viết mới"
     new:
@@ -27,3 +32,12 @@ vi:
       edit_link: "Chỉnh sửa bài viết này"
       back_link: "Quay lại danh sách"
       destroy: "Xóa bài viết này"
+    created_at_1: "Đăng lúc "
+    created_at_2: " trước"
+  errors:
+    messages:
+      invalid_image_type: "Định dạng hình ảnh không hợp lệ. Các định dạng cho phép là JPEG, GIF và PNG."
+      file_too_large: "Kích thước tệp quá nặng."
+      blank: "không được để trống"
+      too_long: "quá dài (tối đa %{count} ký tự)"
+      invalid: "không hợp lệ"

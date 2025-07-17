@@ -14,4 +14,13 @@
       </div>
     </section>
   </aside>
+  <div class="col-md-8">
+    <% if @microposts.any? %>
+      <h3><%= t("microposts.title") %> (<%= @microposts.count %>)</h3>
+      <ul class="microposts">
+        <%= render @microposts %>
+      </ul>
+    <%= raw pagy_bootstrap_nav(@page) %>
+    <% end %>
+  </div>
 </div>
