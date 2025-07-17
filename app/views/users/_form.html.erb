@@ -1,0 +1,23 @@
+<%= form_for @user, url: (local_assigns[:form_url] || nil) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control" %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, class: "form-control" %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, class: "form-control" %>
+
+  <%= f.label :password_confirmation, t(".password_confirmation") %>
+  <%= f.password_field :password_confirmation, class: "form-control" %>
+
+  <%= f.label :birthday, t(".birthday") %>
+  <%= f.date_field :birthday, class: "form-control" %>
+
+  <%= f.label :gender, t(".gender") %>
+  <%= f.select :gender, options_for_select(gender_options_for_select, f.object.gender), prompt: t(".gender_prompt"), class: "form-control" %>
+
+  <%= f.submit t(".submit"), class: "btn btn-primary" %>
+<% end %>

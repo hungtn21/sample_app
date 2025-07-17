@@ -1,7 +1,7 @@
 <% if @user.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-danger">
-      <%= t("errors.template.header.other", count: object.errors.count) %>
+      <%= t("errors.template.header.other", count: @user.errors.count) %>
     </div>
     <ul>
       <% @user.errors.full_messages.each do |msg| %>

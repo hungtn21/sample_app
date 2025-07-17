@@ -23,6 +23,7 @@ vi:
               taken: "đã được sử dụng"
             password:
               blank: "không được để trống"
+              too_short: "quá ngắn (tối thiểu %{count} ký tự)"
             password_confirmation:
               blank: "không được để trống"
               confirmation: "không khớp với mật khẩu"

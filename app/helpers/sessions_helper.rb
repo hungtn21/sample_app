@@ -30,6 +30,10 @@ module SessionsHelper
     cookies.permanent[:remember_token] = user.remember_token
   end
 
+  def current_user? user
+    current_user == user
+  end
+
   private
 
   def find_user_from_cookies
@@ -50,5 +54,14 @@ module SessionsHelper
 
     user = User.find_by(id: user_id)
     user if user&.authenticated?(token)
+  end
+
+  def redirect_back_or default
+    redirect_to(session[:forwarding_url] || default)
+    session.delete(:forwarding_url)
+  end
+
+  def store_location
+    session[:forwarding_url] = request.original_url if request.get?
   end
 end

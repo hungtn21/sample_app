@@ -1,0 +1,7 @@
+<% provide(:title, t(".title")) %>
+<h1><%= t(".heading") %></h1>
+<%= raw pagy_bootstrap_nav(@pagy) %>
+<ul class="users">
+  <%= render @users %>
+</ul>
+<%= raw pagy_bootstrap_nav(@pagy) %>

@@ -14,7 +14,9 @@ gender).freeze
                     format: {with: VALID_EMAIL_REGEX},
                     uniqueness: {case_sensitive: false}
   validate :birthday_must_be_within_allowed_range
-
+  validates :password, presence: true, length:
+                    {minimum: Settings.defaults.user.min_password_length},
+                    allow_nil: true
   before_save :downcase_email
 
   attr_accessor :remember_token

@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if user&.authenticate(params.dig(:session, :password))
       handle_login(user)
       flash[:success] = t(".success", user: user.name)
-      redirect_to user_path(user)
+      redirect_back_or user
     else
       flash.now[:danger] = t(".failure")
       render :new, status: :unprocessable_entity
@@ -26,13 +26,14 @@ class SessionsController < ApplicationController
 
   def handle_login user
     return remember(user) if remember_me?
-    
+
     log_in(user)
     set_session_token(user)
   end
 
   def remember_me?
-    params.dig(:session, :remember_me) == Settings.defaults.remember_me_enabled.to_s
+    params.dig(:session,
+               :remember_me) == Settings.defaults.remember_me_enabled.to_s
   end
 
   def set_session_token user
