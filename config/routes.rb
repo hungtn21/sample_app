@@ -3,6 +3,9 @@ Rails.application.routes.draw do
     #Sign up and login routes
     get "/signup", to: "users#new"
     post "/signup", to: "users#create"
+    get "/login", to: "sessions#new"
+    post "/login", to: "sessions#create"
+    delete "/logout", to: "sessions#destroy"
     get "demo_partials/new", to: "demo_partials#new", as: :new_demo_partial
     get "demo_partials/edit", to: "demo_partials#edit", as: :edit_demo_partial
     get "static_pages/home", to: "static_pages#home", as: :static_pages_home

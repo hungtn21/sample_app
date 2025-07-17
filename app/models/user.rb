@@ -4,7 +4,7 @@ class User < ApplicationRecord
   USER_PERMIT = %i(name email password password_confirmation birthday
 gender).freeze
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  
+
   enum gender: {female: 0, male: 1, other: 2}
 
   validates :name, presence: true,
@@ -16,6 +16,15 @@ gender).freeze
   validate :birthday_must_be_within_allowed_range
 
   before_save :downcase_email
+
+  def self.digest string
+    cost = if ActiveModel::SecurePassword.min_cost
+             BCrypt::Engine::MIN_COST
+           else
+             BCrypt::Engine.cost
+           end
+    BCrypt::Password.create(string, cost:)
+  end
 
   private
 

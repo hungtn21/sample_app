@@ -6,14 +6,20 @@ vi:
       too_long: "quá dài (tối đa %{count} ký tự)"
       invalid: "không hợp lệ"
       taken: "đã được sử dụng"
-  header:
-    home: "Trang chủ"
-    help: "Trợ giúp"
-    login: "Đăng nhập"
-    contact: "Liên hệ"
-  switch:
-    en: "Tiếng Anh"
-    vi: "Tiếng Việt"
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+      logout: "Đăng xuất"
+      contact: "Liên hệ"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      switch:
+        en: "Tiếng Anh"
+        vi: "Tiếng Việt"
   app:
     base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
   errors:

@@ -57,6 +57,7 @@ class MicropostsController < ApplicationController
     end
   end
 
+  # DELETE /microposts/1 or /microposts/1.json
   def destroy
     respond_to do |format|
       if @micropost.destroy

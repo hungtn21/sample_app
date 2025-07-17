@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
   before_action :load_user, only: :show
 
+  # GET /users/:id
   def show; end
 
+  # POST /signup
   def create
     @user = User.new user_params
     if @user.save
@@ -13,6 +15,7 @@ class UsersController < ApplicationController
     end
   end
 
+  # GET /signup
   def new
     @user = User.new
   end
