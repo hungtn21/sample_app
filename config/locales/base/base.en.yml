@@ -1,0 +1,17 @@
+en:
+  errors:
+    not_found: "The record you are looking for could not be found."
+  header:
+    home: "Home"
+    help: "Help"
+    login: "Log in"
+    contact: "Contact"
+  activerecord:
+    attributes:
+      micropost:
+        content: "Content"
+  switch:
+    en: "English"
+    vi: "Vietnamese"
+  app:
+    base_title: "Ruby on Rails Tutorial Sample App"

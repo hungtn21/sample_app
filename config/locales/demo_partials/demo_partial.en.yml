@@ -1,0 +1,11 @@
+en:
+  demo_partials:
+    form:
+      zone: "Zone"
+      date: "Date"
+    new:
+      zone: "Zone - New action"
+      title: "New Zone"
+    edit:
+      title: "Edit Zone"
+      zone: "Zone - Edit action"

@@ -1,0 +1,21 @@
+<%= form_with(model: product) do |form| %>
+  <% if product.errors.any? %>
+    <div class="form-errors">
+      <h2><%= t("products.form.error_heading", count: product.errors.count) %></h2>
+      <ul>
+        <% product.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :name, t("products.form.name"), class: "form-label" %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= form.submit t("products.form.submit") %>
+  </div>
+<% end %>

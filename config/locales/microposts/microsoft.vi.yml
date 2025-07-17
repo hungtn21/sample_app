@@ -1,0 +1,28 @@
+vi:
+  microposts:
+    created: "Bài đăng đã được tạo thành công."
+    updated: "Bài đăng đã được cập nhật thành công."
+    destroyed: "Bài đăng đã được xóa thành công."
+    destroy_failed: "Không thể xóa bài viết."
+    not_found: "Không tìm thấy bài viết."
+    content: "Nội dung"
+    form:
+      errors:
+        title: "%{count} lỗi đã ngăn không cho micropost được lưu:"
+      submit: "Lưu bài viết"
+    edit:
+      title: "Chỉnh sửa bài viết"
+      show_link: "Xem bài viết này"
+      back_link: "Quay lại danh sách"
+    index:
+      title: "Danh sách bài viết"
+      show_link: "Xem bài viết này"
+      new_link: "Tạo bài viết mới"
+    new:
+      title: "Bài viết mới"
+      back_link: "Quay lại danh sách"
+    show:
+      title: "Chi tiết bài viết"
+      edit_link: "Chỉnh sửa bài viết này"
+      back_link: "Quay lại danh sách"
+      destroy: "Xóa bài viết này"

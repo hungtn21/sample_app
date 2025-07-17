@@ -1,0 +1,15 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "sample app", "#", id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("header.home"), static_pages_home_path %></li>
+        <li><%= link_to t("header.help"), static_pages_help_path %></li>
+        <li><%= link_to t("header.contact"), static_pages_contact_path %></li>
+        <li><%= link_to t("header.login"), "#" %></li>
+        <li><%= link_to t("switch.en"), url_for(locale: :en) %></li>
+        <li><%= link_to t("switch.vi"), url_for(locale: :vi) %></li>
+      </ul>
+    </nav>
+  </div>
+</header>

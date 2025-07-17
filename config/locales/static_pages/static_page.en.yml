@@ -1,0 +1,20 @@
+en:
+  static_pages:
+    contact:
+      title: "Contact"
+      heading: "Contact"
+      greeting: "Hello %{name}!"
+      email_notice: "Email us at: hunghihi123@gmail.com"
+    help:
+      title: "Help"
+      heading: "Help"
+      description: "Get help on the Ruby on Rails Tutorial at the"
+      help_page_link: "Rails Tutorial help page"
+      app_help_description: "To get help on this sample app, see the"
+      book_title: "Ruby on Rails Tutorial"
+    home:
+      title: "Home"
+      heading: "Sample App"
+      description: "This is the home page for the"
+      link_text: "Ruby on Rails Tutorial"
+      suffix: "sample application."

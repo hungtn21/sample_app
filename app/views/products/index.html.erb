@@ -1,0 +1,9 @@
+<p class="notice-message"><%= notice %></p>
+
+<h1><%= t("products.titles.index") %></h1>
+
+<div id="products">
+  <%= render partial: "product", collection: @products, as: :product %>
+</div>
+
+<%= link_to t("products.links.new"), new_product_path %>

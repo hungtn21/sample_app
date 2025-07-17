@@ -408,6 +408,11 @@ Layout/SpaceBeforeBlockBraces:
     - space
     - no_space
 
+Layout/IndentationWidth:
+  EnforcedStyle: spaces
+  Enabled: true
+  Width: 2
+
 Layout/SpaceInsideBlockBraces:
   EnforcedStyle: no_space
   SupportedStyles:
@@ -426,6 +431,7 @@ Layout/SpaceInsideHashLiteralBraces:
     - no_space
 
 Layout/TrailingEmptyLines:
+  Enabled: true
   EnforcedStyle: final_newline
   SupportedStyles:
     - final_newline
@@ -528,6 +534,11 @@ Layout/DefEndAlignment:
   # keyword on the same line.
   EnforcedStyleAlignWith: start_of_line
 
+Layout/EmptyLines:
+  Enabled: true
+
+Layout/TrailingWhitespace:
+  Enabled: true
 ##################### Rails ##################################
 
 Rails/ActionFilter:

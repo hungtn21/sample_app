@@ -1,0 +1,20 @@
+vi:
+  static_pages:
+    contact:
+      title: "Liên hệ"
+      heading: "Liên hệ"
+      greeting: "Xin chào %{name}!"
+      email_notice: "Gửi email cho chúng tôi tại: hunghihi123@gmail.com"
+    help:
+      title: "Trợ giúp"
+      heading: "Trợ giúp"
+      description: "Nhận trợ giúp về Ruby on Rails Tutorial tại"
+      help_page_link: "Trang trợ giúp của Rails Tutorial"
+      app_help_description: "Để được hỗ trợ về ứng dụng mẫu này, hãy xem"
+      book_title: "Sách Ruby on Rails Tutorial"
+    home:
+      title: "Trang chủ"
+      heading: "Ứng dụng mẫu"
+      description: "Đây là trang chủ của"
+      link_text: "Ruby on Rails Tutorial"
+      suffix: "ứng dụng mẫu."

@@ -1,0 +1,3 @@
+defaults: &defaults
+  help_link: "http://www.railstutorial.org/help"
+  book_link: "http://www.railstutorial.org/book"

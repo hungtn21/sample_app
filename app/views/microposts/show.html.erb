@@ -1,0 +1,11 @@
+<h1><%= t(".title") %></h1>
+
+<p>
+  <strong><%= t("activerecord.attributes.micropost.content") %>:</strong>
+  <%= @micropost.content %>
+</p>
+<div>
+<%= link_to t(".edit_link"), edit_micropost_path(@micropost) %> |
+<%= link_to t(".back_link"), microposts_path %>
+<%= button_to t(".destroy"), @micropost, method: :delete %>
+</div>

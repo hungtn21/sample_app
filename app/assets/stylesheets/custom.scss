@@ -1,0 +1,65 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+/* universal */
+body {
+    padding-top: 60px;
+}
+
+section {
+    overflow: auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.center {
+    text-align: center;
+}
+
+.center h1 {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-errors {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.notice-message {
+    color: green;
+}
+
+#logo {
+    /* Layout */
+    float: left;
+    margin-right: 10px;
+    padding-top: 9px;
+
+    /* Typography */
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+#logo:hover {
+    color: #fff;
+    text-decoration: none;
+}
