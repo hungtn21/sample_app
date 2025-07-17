@@ -8,6 +8,7 @@ vi:
       submit: "Đăng nhập"
       sign_up_now: "Đăng ký ngay!"
       new_user?: "Người dùng mới? "
+      remember_me: "Ghi nhớ đăng nhập"
     create:
       success: "Đăng nhập thành công với %{user}."
       failure: "Email hoặc mật khẩu không đúng."

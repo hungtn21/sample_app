@@ -564,3 +564,6 @@ Rails/ScopeArgs:
 Rails/Validation:
   Include:
     - app/models/**/*.rb
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: false
