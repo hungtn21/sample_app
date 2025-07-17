@@ -9,7 +9,7 @@ defaults: &defaults
     birthday_year_limit: 100
     min_password_length: 6
     items_per_page: 20
-    gravatar_size: 50
+    gravatar_size: 80
     gravatar_link: "http://gravatar.com/emails"
     password_reset_expiration: 2 # in hours
   date_formats:

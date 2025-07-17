@@ -1,0 +1,5 @@
+vi:
+  shared:
+    stats:
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"

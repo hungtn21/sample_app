@@ -6,8 +6,9 @@ class Micropost < ApplicationRecord
   end
 
   PERMITTED_ATTRIBUTES = %i(content image).freeze
-  
+
   scope :newest, -> {order(created_at: :desc)}
+  scope :relate_post, ->(user_ids) {where(user_id: user_ids)}
 
   validates :content, presence: true,
 length: {maximum: Settings.defaults.micropost.max_content_length}

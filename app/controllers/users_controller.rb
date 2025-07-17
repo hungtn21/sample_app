@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(index edit update destroy)
-  before_action :load_user, only: %i(show edit update destroy)
+  before_action :logged_in_user, except: %i(new create show)
+  before_action :load_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
   # GET /users
@@ -54,6 +54,20 @@ class UsersController < ApplicationController
   # GET /signup
   def new
     @user = User.new
+  end
+
+  def following
+    @title = t(".title")
+    @pagy, @users = pagy @user.following,
+                         items: Settings.defaults.user.items_per_page
+    render :show_follow
+  end
+
+  def followers
+    @title = t(".title")
+    @pagy, @users = pagy @user.followers,
+                         items: Settings.defaults.user.items_per_page
+    render :show_follow
   end
 
   private
