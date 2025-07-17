@@ -12,5 +12,6 @@ en:
     create:
       success: "Logged in successfully as %{user}."
       failure: "Invalid email/password combination."
+      not_activated: "Account not activated."
     destroy:
       success: "Logged out successfully."

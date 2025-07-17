@@ -1,0 +1,5 @@
+vi:
+  account_activations:
+    edit:
+      activated: "Tài khoản đã được kích hoạt thành công."
+      invalid_activation_link: "Liên kết kích hoạt không hợp lệ."

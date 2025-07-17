@@ -1,7 +1,7 @@
 en:
   users:
     create:
-      success: "User was successfully created."
+      check_email: "Please check your email to activate your account."
     form:
       name: "Name"
       email: "Email"

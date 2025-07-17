@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     resources :microposts
     resources :demo_partials
     resources :users
+    resources :account_activations, only: %i(edit)
     root :to => "static_pages#home"
   end
 end

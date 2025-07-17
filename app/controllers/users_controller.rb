@@ -5,8 +5,9 @@ class UsersController < ApplicationController
   before_action :admin_user, only: %i(destroy)
   # GET /users
   def index
-    @pagy, @users = pagy(User.recent, items: Settings.defaults.user.items_per_page, page: params[:page],
-items_param: false)
+    @pagy, @users = pagy(User.recent,
+                         items: Settings.defaults.user.items_per_page,
+                         page: params[:page], items_param: false)
   end
 
   # GET /users/:id
@@ -16,9 +17,9 @@ items_param: false)
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t(".success")
-      log_in @user
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t(".check_email")
+      redirect_to @user, status: :see_other
     else
       render :new, status: :unprocessable_entity
     end

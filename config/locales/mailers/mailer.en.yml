@@ -1,0 +1,8 @@
+en:
+  user_mailer:
+    account_activation:
+      subject: "Account Activation"
+      greeting: "Hello, %{name}!"
+      message: "Please click the link below to activate your account."
+    password_reset:
+      subject: "Password Reset Instructions"
