@@ -10,6 +10,8 @@ defaults: &defaults
     min_password_length: 6
     items_per_page: 20
     gravatar_size: 80
+    gravatar_link: "http://gravatar.com/emails"
+    password_reset_expiration: 2 # in hours
   date_formats:
     user_profile: "%B %d, %Y"
   remember_me_enabled: 1

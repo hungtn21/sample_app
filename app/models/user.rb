@@ -19,7 +19,7 @@ gender).freeze
                     allow_nil: true
   before_save :downcase_email
 
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   before_create :create_activation_digest
   before_save :downcase_email
@@ -64,6 +64,25 @@ gender).freeze
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
   end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.defaults.user.password_reset_expiration.hours.ago
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns(reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now)
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def send_password_reset_confirmation_email
+    UserMailer.password_reset_confirmation(self).deliver_now
+  end
+
   private
 
   def downcase_email

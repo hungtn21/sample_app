@@ -6,3 +6,12 @@ en:
       message: "Please click the link below to activate your account."
     password_reset:
       subject: "Password Reset Instructions"
+      greeting: "Hello, %{name}!"
+      message: "Please click the link below to reset your password."
+      expiration: "This link will expire in %{time} hours."
+      ignore: "If you did not request a password reset, please ignore this email."
+    password_reset_confirmation:
+      subject: "Password Reset Confirmation"
+      greeting: "Hello, %{name}!"
+      message: "Your password has been successfully reset. You can now log in with your new password."
+      link_text: "Click here to log in"
