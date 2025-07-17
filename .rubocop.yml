@@ -408,6 +408,10 @@ Layout/SpaceBeforeBlockBraces:
     - space
     - no_space
 
+Layout/IndentationWidth:
+  EnforcedStyle: spaces
+  Width: 2
+
 Layout/SpaceInsideBlockBraces:
   EnforcedStyle: no_space
   SupportedStyles:
