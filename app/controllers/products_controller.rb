@@ -49,7 +49,7 @@ class ProductsController < ApplicationController
       else
         format.html {render :edit, status: :unprocessable_entity}
         format.json do
-          render json: @product.errors, 
+          render json: @product.errors,
                  status: :unprocessable_entity
         end
       end
@@ -60,12 +60,15 @@ class ProductsController < ApplicationController
   def destroy
     respond_to do |format|
       if @product.destroy
-        format.html {redirect_to products_url, notice: t("products.destroyed")}
+        format.html {redirect_to products_url, notice: t(".success")}
         format.json {head :no_content}
       else
-        format.html {redirect_to products_url, alert: t("products.destroy_failed")}
+        format.html do
+          redirect_to products_url,
+                      alert: t(".failed")
+        end
         format.json do
-          render json: @product.errors, 
+          render json: @product.errors,
                  status: :unprocessable_entity
         end
       end

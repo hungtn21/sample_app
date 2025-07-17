@@ -1,0 +1,7 @@
+en:
+  users:
+    new:
+      title: "Signup"
+      heading: "Signup"
+      password_confirmation: "Confirm Password"
+      submit: "Create Account"

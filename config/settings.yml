@@ -1,3 +1,8 @@
 defaults: &defaults
   help_link: "http://www.railstutorial.org/help"
   book_link: "http://www.railstutorial.org/book"
+  user:
+    max_name_length: 50
+    max_email_length: 255
+    birthday_year_limit: 100
+    max_age_years: 110

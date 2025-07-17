@@ -2,8 +2,9 @@ vi:
   microposts:
     created: "Bài đăng đã được tạo thành công."
     updated: "Bài đăng đã được cập nhật thành công."
-    destroyed: "Bài đăng đã được xóa thành công."
-    destroy_failed: "Không thể xóa bài viết."
+    destroy:
+      success: "Bài đăng đã được xóa thành công."
+      failed: "Không thể xóa bài viết."
     not_found: "Không tìm thấy bài viết."
     content: "Nội dung"
     form:

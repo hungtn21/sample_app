@@ -2,8 +2,9 @@ vi:
   products:
     created: "Tạo sản phẩm thành công."
     updated: "Cập nhật sản phẩm thành công."
-    destroyed: "Xóa sản phẩm thành công."
-    destroy_failed: "Xóa sản phẩm thất bại."
+    destroy:
+      success: "Xóa sản phẩm thành công."
+      failed: "Xóa sản phẩm thất bại."
     not_found: "Không tìm thấy sản phẩm."
     index:
       title: "Danh sách sản phẩm"
