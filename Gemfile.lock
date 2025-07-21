@@ -69,10 +69,22 @@ GEM
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
+    autoprefixer-rails (10.4.21.0)
+      execjs (~> 2)
     base64 (0.1.1)
+    better_html (2.1.1)
+      actionview (>= 6.0)
+      activesupport (>= 6.0)
+      ast (~> 2.0)
+      erubi (~> 1.4)
+      parser (>= 2.4)
+      smart_properties
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     builder (3.2.4)
     capybara (3.39.2)
       addressable
@@ -84,12 +96,18 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
+    config (5.6.1)
+      deep_merge (~> 1.2, >= 1.2.1)
+      ostruct
     crass (1.0.6)
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    deep_merge (1.2.2)
     erubi (1.12.0)
+    execjs (2.10.0)
+    ffi (1.17.2-x86_64-linux-gnu)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.14.1)
@@ -132,6 +150,7 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
+    ostruct (0.6.3)
     parallel (1.23.0)
     parser (3.2.2.3)
       ast (~> 2.4.1)
@@ -193,16 +212,28 @@ GEM
       parser (>= 3.2.1.0)
     rubocop-checkstyle_formatter (0.6.0)
       rubocop (>= 1.14.0)
+    rubocop-erb (0.5.5)
+      better_html
+      rubocop (~> 1.45)
     rubocop-rails (2.14.2)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     selenium-webdriver (4.10.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    smart_properties (1.17.0)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -213,6 +244,7 @@ GEM
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
     thor (1.2.2)
+    tilt (2.6.1)
     timeout (0.4.0)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
@@ -243,8 +275,11 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bootstrap-sass (= 3.4.1)
   capybara
+  config
   debug
+  i18n
   importmap-rails
   jbuilder
   mysql2 (~> 0.5)
@@ -252,7 +287,9 @@ DEPENDENCIES
   rails (~> 7.0.5)
   rubocop (~> 1.26)
   rubocop-checkstyle_formatter
+  rubocop-erb
   rubocop-rails (~> 2.14.0)
+  sassc-rails
   selenium-webdriver
   sprockets-rails
   stimulus-rails

@@ -1,0 +1,9 @@
+<h1><%= t(".title") %></h1>
+
+<%= render "form", micropost: @micropost %>
+
+<br>
+
+<div>
+  <%= link_to t(".back_link"), microposts_path %>
+</div>

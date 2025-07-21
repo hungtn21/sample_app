@@ -1,0 +1,11 @@
+vi:
+  demo_partials:
+    form:
+      zone: "Khu vực"
+      date: "Thời gian"
+    new:
+      zone: "Khu vực - Tạo mới"
+      title: "Khu vực mới"
+    edit:
+      title: "Khu vực chỉnh sửa"
+      zone: "Khu vực - Chỉnh sửa"

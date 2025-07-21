@@ -1,0 +1,29 @@
+vi:
+  products:
+    created: "Tạo sản phẩm thành công."
+    updated: "Cập nhật sản phẩm thành công."
+    destroyed: "Xóa sản phẩm thành công."
+    destroy_failed: "Xóa sản phẩm thất bại."
+    not_found: "Không tìm thấy sản phẩm."
+    index:
+      title: "Danh sách sản phẩm"
+      new_product: "Thêm sản phẩm mới"
+    show:
+      edit: "Chỉnh sửa sản phẩm này"
+      back: "Quay lại danh sách sản phẩm"
+      destroy: "Xóa sản phẩm này"
+    edit:
+      title: "Chỉnh sửa sản phẩm"
+      show: "Xem sản phẩm này"
+      back: "Quay lại danh sách sản phẩm"
+    new:
+      title: "Thêm sản phẩm mới"
+      back: "Quay lại danh sách sản phẩm"
+    form:
+      errors:
+        one: "Có 1 lỗi khiến sản phẩm không thể lưu:"
+        other: "Có %{count} lỗi khiến sản phẩm không thể lưu:"
+      name: "Tên"
+      submit: "Lưu"
+    product:
+      show: "Xem sản phẩm này"

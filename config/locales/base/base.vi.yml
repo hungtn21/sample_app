@@ -1,0 +1,17 @@
+vi:
+  errors:
+    not_found: "Không tìm thấy bản ghi bạn đang tìm kiếm."
+  header:
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    login: "Đăng nhập"
+    contact: "Liên hệ"
+  activerecord:
+    attributes:
+      micropost:
+        content: "Nội dung"
+  switch:
+    en: "Tiếng Anh"
+    vi: "Tiếng Việt"
+  app:
+    base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"

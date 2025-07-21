@@ -1,0 +1,29 @@
+en:
+  products:
+    created: "Product was successfully created."
+    updated: "Product was successfully updated."
+    destroyed: "Product was successfully destroyed."
+    destroy_failed: "Failed to delete the product."
+    not_found: "Product not found."
+    index:
+      title: "Products"
+      new_product: "New product"
+    show:
+      edit: "Edit this product"
+      back: "Back to products"
+      destroy: "Destroy this product"
+    edit:
+      title: "Editing product"
+      show: "Show this product"
+      back: "Back to products"
+    new:
+      title: "New product"
+      back: "Back to products"
+    form:
+      errors:
+        one: "1 error prohibited this product from being saved:"
+        other: "%{count} errors prohibited this product from being saved:"
+      name: "Name"
+      submit: "Save"
+    product:
+      show: "Show this product"

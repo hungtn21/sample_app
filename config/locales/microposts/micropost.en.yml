@@ -1,0 +1,28 @@
+en:
+  microposts:
+    created: "Micropost was successfully created."
+    updated: "Micropost was successfully updated."
+    destroyed: "Micropost was successfully destroyed."
+    destroy_failed: "Failed to delete the micropost."
+    not_found: "Micropost not found."
+    content: "Content"
+    form:
+      submit: "Save Micropost"
+      errors:
+        title: "%{count} error(s) prohibited this micropost from being saved:"
+    edit:
+      title: "Editing Micropost"
+      show_link: "Show this micropost"
+      back_link: "Back to microposts"
+    index:
+      title: "Microposts"
+      show_link: "Show this micropost"
+      new_link: "New micropost"
+    new:
+      title: "New Micropost"
+      back_link: "Back to microposts"
+    show:
+      title: "Micropost Details"
+      edit_link: "Edit this micropost"
+      back_link: "Back to microposts"
+      destroy: "Destroy this micropost"

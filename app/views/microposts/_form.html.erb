@@ -1,0 +1,22 @@
+<%= form_with(model: micropost) do |form| %>
+  <% if micropost.errors.any? %>
+    <div class="form-errors">
+      <h2><%= t("microposts.form.errors.title", count: micropost.errors.count) %></h2>
+
+      <ul>
+        <% micropost.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :content, class="form-label" %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div>
+    <%= form.submit t("microposts.form.submit") %>
+  </div>
+<% end %>
