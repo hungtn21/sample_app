@@ -60,10 +60,16 @@ class MicropostsController < ApplicationController
   def destroy
     respond_to do |format|
       if @micropost.destroy
-        format.html {redirect_to microposts_url, notice: t("microposts.destroyed")}
+        format.html do
+          redirect_to microposts_url,
+                      notice: t(".success")
+        end
         format.json {head :no_content}
       else
-        format.html {redirect_to microposts_url, alert: t("microposts.destroy_failed")}
+        format.html do
+          redirect_to microposts_url,
+                      alert: t(".failed")
+        end
         format.json do
           render json: @micropost.errors,
                  status: :unprocessable_entity

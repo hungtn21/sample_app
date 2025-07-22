@@ -1,0 +1,7 @@
+vi:
+  users:
+    new:
+      title: "Đăng ký"
+      heading: "Đăng ký"
+      password_confirmation: "Xác nhận mật khẩu"
+      submit: "Tạo tài khoản"

@@ -72,6 +72,7 @@ GEM
     autoprefixer-rails (10.4.21.0)
       execjs (~> 2)
     base64 (0.1.1)
+    bcrypt (3.1.18)
     better_html (2.1.1)
       actionview (>= 6.0)
       activesupport (>= 6.0)
@@ -274,6 +275,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt (= 3.1.18)
   bootsnap
   bootstrap-sass (= 3.4.1)
   capybara

@@ -2,8 +2,9 @@ en:
   microposts:
     created: "Micropost was successfully created."
     updated: "Micropost was successfully updated."
-    destroyed: "Micropost was successfully destroyed."
-    destroy_failed: "Failed to delete the micropost."
+    destroy:
+      success: "Micropost was successfully destroyed." 
+      failed: "Failed to delete the micropost."
     not_found: "Micropost not found."
     content: "Content"
     form:

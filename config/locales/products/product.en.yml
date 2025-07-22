@@ -2,8 +2,9 @@ en:
   products:
     created: "Product was successfully created."
     updated: "Product was successfully updated."
-    destroyed: "Product was successfully destroyed."
-    destroy_failed: "Failed to delete the product."
+    destroy:
+      success: "Product was successfully destroyed."
+      failed: "Failed to delete the product."
     not_found: "Product not found."
     index:
       title: "Products"

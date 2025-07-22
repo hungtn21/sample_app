@@ -1,6 +1,11 @@
 vi:
   errors:
     not_found: "Không tìm thấy bản ghi bạn đang tìm kiếm."
+    messages:
+      blank: "không được để trống"
+      too_long: "quá dài (tối đa %{count} ký tự)"
+      invalid: "không hợp lệ"
+      taken: "đã được sử dụng"
   header:
     home: "Trang chủ"
     help: "Trợ giúp"
@@ -10,6 +15,18 @@ vi:
     attributes:
       micropost:
         content: "Nội dung"
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+        birthday: "Ngày sinh"
+    errors:
+        models:
+          user:
+            attributes:
+              birthday:
+                birthday_year_validation: "phải trong vòng %{count} năm qua"
   switch:
     en: "Tiếng Anh"
     vi: "Tiếng Việt"

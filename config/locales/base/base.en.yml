@@ -1,6 +1,11 @@
 en:
   errors:
     not_found: "The record you are looking for could not be found."
+    messages:
+      blank: "cannot be blank"
+      too_long: "is too long (maximum is %{count} characters)"
+      invalid: "is invalid"
+      taken: "has already been taken"
   header:
     home: "Home"
     help: "Help"
@@ -10,6 +15,18 @@ en:
     attributes:
       micropost:
         content: "Content"
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        birthday: "Birthday"
+    errors:
+        models:
+          user:
+            attributes:
+              birthday:
+                birthday_year_validation: "must be within the last %{count} years"
   switch:
     en: "English"
     vi: "Vietnamese"
