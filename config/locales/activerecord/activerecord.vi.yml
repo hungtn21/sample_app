@@ -1,0 +1,28 @@
+vi:
+  activerecord:
+    attributes:
+      micropost:
+        content: "Nội dung"
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+        birthday: "Ngày sinh"
+    errors:
+      models:
+        user:
+          attributes:
+            birthday:
+              birthday_year_validation: "phải trong vòng %{count} năm qua"
+            name:
+              blank: "không được để trống"
+            email:
+              blank: "không được để trống"
+              invalid: "không hợp lệ"
+              taken: "đã được sử dụng"
+            password:
+              blank: "không được để trống"
+            password_confirmation:
+              blank: "không được để trống"
+              confirmation: "không khớp với mật khẩu"

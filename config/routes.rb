@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|vi/ do
+    #Sign up and login routes
+    get "/signup", to: "users#new"
+    post "/signup", to: "users#create"
     get "demo_partials/new", to: "demo_partials#new", as: :new_demo_partial
     get "demo_partials/edit", to: "demo_partials#edit", as: :edit_demo_partial
     get "static_pages/home", to: "static_pages#home", as: :static_pages_home
@@ -8,6 +11,7 @@ Rails.application.routes.draw do
     resources :products
     resources :microposts
     resources :demo_partials
+    resources :users, only: %i(show)
     root "microposts#index"
   end
 end

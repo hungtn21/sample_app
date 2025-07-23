@@ -49,6 +49,7 @@ gem "sassc-rails"
 # gem "image_processing", "~> 1.2"
 
 gem "bcrypt", "3.1.18"
+gem "byebug"
 gem "config"
 gem "i18n"
 gem "rubocop-erb"

@@ -5,4 +5,5 @@ defaults: &defaults
     max_name_length: 50
     max_email_length: 255
     birthday_year_limit: 100
-    max_age_years: 110
+  date_formats:
+    user_profile: "%B %d, %Y"
