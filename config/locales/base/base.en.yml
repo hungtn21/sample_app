@@ -6,14 +6,20 @@ en:
       too_long: "is too long (maximum is %{count} characters)"
       invalid: "is invalid"
       taken: "has already been taken"
-  header:
-    home: "Home"
-    help: "Help"
-    login: "Log in"
-    contact: "Contact"
-  switch:
-    en: "English"
-    vi: "Vietnamese"
+  layouts:
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+      logout: "Log out"
+      contact: "Contact"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      switch:
+        en: "English"
+        vi: "Vietnamese"
   app:
     base_title: "Ruby on Rails Tutorial Sample App"
   errors:

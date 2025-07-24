@@ -1,0 +1,8 @@
+{
+  "name": "rails_tutorial",
+  "packageManager": "yarn@4.9.1",
+  "dependencies": {
+    "bootstrap": "3.4.1",
+    "jquery": "3.4.1"
+  }
+}

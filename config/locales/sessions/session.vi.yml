@@ -1,0 +1,15 @@
+vi:
+  sessions:
+    new:
+      title: "Đăng nhập"
+      heading: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      submit: "Đăng nhập"
+      sign_up_now: "Đăng ký ngay!"
+      new_user?: "Người dùng mới? "
+    create:
+      success: "Đăng nhập thành công với %{user}."
+      failure: "Email hoặc mật khẩu không đúng."
+    destroy:
+      success: "Đăng xuất thành công."
