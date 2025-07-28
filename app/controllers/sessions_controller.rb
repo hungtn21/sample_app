@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params.dig(:session, :email)&.downcase)
     if user&.authenticate(params.dig(:session, :password))
-      log_in user
+      handle_login(user)
       flash[:success] = t(".success", user: user.name)
       redirect_to user_path(user)
     else
@@ -20,5 +20,23 @@ class SessionsController < ApplicationController
     log_out
     redirect_to root_path
     flash[:success] = t(".success")
+  end
+
+  private
+
+  def handle_login user
+    return remember(user) if remember_me?
+    
+    log_in(user)
+    set_session_token(user)
+  end
+
+  def remember_me?
+    params.dig(:session, :remember_me) == Settings.defaults.remember_me_enabled.to_s
+  end
+
+  def set_session_token user
+    user.remember
+    session[:session_token] = user.remember_token
   end
 end

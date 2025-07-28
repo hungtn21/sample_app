@@ -8,6 +8,7 @@ en:
       submit: "Log in"
       sign_up_now: "Sign up now!"
       new_user?: "New user? "
+      remember_me: "Remember me"
     create:
       success: "Logged in successfully as %{user}."
       failure: "Invalid email/password combination."

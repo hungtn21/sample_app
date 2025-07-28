@@ -7,3 +7,4 @@ defaults: &defaults
     birthday_year_limit: 100
   date_formats:
     user_profile: "%B %d, %Y"
+  remember_me_enabled: 1
