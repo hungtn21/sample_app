@@ -51,7 +51,9 @@ gem "sassc-rails"
 gem "bcrypt", "3.1.18"
 gem "byebug"
 gem "config"
+gem "faker", "2.21.0"
 gem "i18n"
+gem "pagy"
 gem "rubocop-erb"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html

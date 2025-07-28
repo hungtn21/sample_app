@@ -1,20 +1,37 @@
 vi:
   users:
-    new:
-      title: "Đăng ký"
-      heading: "Đăng ký"
+    create:
+      success: "Người dùng đã được tạo thành công."
+    form:
       name: "Tên"
       email: "Email"
+      password: "Mật khẩu"
       password_confirmation: "Xác nhận mật khẩu"
       birthday: "Ngày sinh"
-      day: "Ngày"
-      month: "Tháng"
-      year: "Năm"
       gender: "Giới tính"
       gender_male: "Nam"
       gender_female: "Nữ"
       gender_other: "Khác"
       gender_prompt: "Chọn giới tính"
-      submit: "Tạo tài khoản"
-    create:
-      success: "Người dùng đã được tạo thành công."
+      submit: "Gửi"
+      not_found: "Không tìm thấy người dùng."
+    new:
+      title: "Tạo người dùng mới"
+      heading: "Tạo người dùng mới"
+    edit:
+      title: "Chỉnh sửa người dùng"
+      heading: "Chỉnh sửa người dùng"
+    update:
+      updated: "Người dùng đã được cập nhật thành công."
+    errors:
+      not_logged_in: "Bạn phải đăng nhập để truy cập trang này."
+      not_authorized: "Bạn không có quyền thực hiện hành động này."
+    index:
+      title: "Người dùng"
+      heading: "Danh sách người dùng"
+    destroy:
+      success: "Người dùng đã được xóa thành công."
+      failed: "Xóa người dùng thất bại."
+    user:
+      delete: "Xóa"
+      confirm: "Bạn có chắc chắn muốn xóa người dùng này không?"

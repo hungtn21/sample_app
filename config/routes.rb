@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     resources :products
     resources :microposts
     resources :demo_partials
-    resources :users, only: %i(show)
-    root "microposts#index"
+    resources :users
+    root :to => "static_pages#home"
   end
 end
