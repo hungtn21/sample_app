@@ -6,6 +6,7 @@
       <%= f.label t(".email") %>
       <%= f.email_field :email, class: "form-control" %>
       <%= f.label t(".password") %>
+      <%= link_to t(".forgot_password"), new_password_reset_path %>
       <%= f.password_field :password, class: "form-control" %>
       <%= f.submit t(".submit"), class: "btn btn-primary" %>
       <%= f.label :remember_me, t(".remember_me"), class: "checkbox inline" do %>

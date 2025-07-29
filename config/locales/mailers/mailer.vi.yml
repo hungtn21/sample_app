@@ -6,3 +6,12 @@ vi:
       message: "Vui lòng nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn."
     password_reset:
       subject: "Hướng dẫn đặt lại mật khẩu"
+      greeting: "Xin chào, %{name}!"
+      message: "Vui lòng nhấp vào liên kết bên dưới để đặt lại mật khẩu của bạn."
+      expiration: "Liên kết này sẽ hết hạn trong %{time} giờ."
+      ignore: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này."
+    password_reset_confirmation:
+      subject: "Xác nhận đặt lại mật khẩu"
+      greeting: "Xin chào, %{name}!"
+      message: "Mật khẩu của bạn đã được đặt lại thành công. Bạn có thể đăng nhập bằng mật khẩu mới của mình."
+      link_text: "Nhấp vào đây để đăng nhập"

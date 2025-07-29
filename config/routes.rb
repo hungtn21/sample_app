@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     resources :demo_partials
     resources :users
     resources :account_activations, only: %i(edit)
+    resources :password_resets, only: %i(new create edit update)
     root :to => "static_pages#home"
   end
 end
