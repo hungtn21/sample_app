@@ -1,7 +1,7 @@
 vi:
   users:
     create:
-      success: "Người dùng đã được tạo thành công."
+      check_email: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản."
     form:
       name: "Tên"
       email: "Email"

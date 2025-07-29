@@ -12,5 +12,6 @@ vi:
     create:
       success: "Đăng nhập thành công với %{user}."
       failure: "Email hoặc mật khẩu không đúng."
+      not_activated: "Tài khoản chưa được kích hoạt."
     destroy:
       success: "Đăng xuất thành công."

@@ -1,0 +1,8 @@
+vi:
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      greeting: "Xin chào, %{name}!"
+      message: "Vui lòng nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn."
+    password_reset:
+      subject: "Hướng dẫn đặt lại mật khẩu"

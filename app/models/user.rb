@@ -19,7 +19,12 @@ gender).freeze
                     allow_nil: true
   before_save :downcase_email
 
-  attr_accessor :remember_token
+  attr_accessor :remember_token, :activation_token
+
+  before_create :create_activation_digest
+  before_save :downcase_email
+
+  scope :recent, -> {order(created_at: :desc)}
 
   class << self
     def digest string
@@ -45,12 +50,20 @@ gender).freeze
     update_column :remember_digest, nil
   end
 
-  def authenticated? remember_token
-    return false if remember_digest.blank?
+  def authenticated? attribute, token
+    digest = send("#{attribute}_digest")
+    return false unless digest
 
-    BCrypt::Password.new(remember_digest).is_password?(remember_token)
+    BCrypt::Password.new(digest).is_password?(token)
   end
 
+  def activate
+    update_columns(activated: true, activated_at: Time.zone.now)
+  end
+
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
+  end
   private
 
   def downcase_email
@@ -64,5 +77,10 @@ gender).freeze
     if birthday < max_years.years.ago.to_date || birthday > Time.zone.today
       errors.add(:birthday, :birthday_year_validation, count: max_years)
     end
+  end
+
+  def create_activation_digest
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest(activation_token)
   end
 end
