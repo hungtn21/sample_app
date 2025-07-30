@@ -18,3 +18,5 @@ en:
       description: "This is the home page for the"
       link_text: "Ruby on Rails Tutorial"
       suffix: "sample application."
+      signup_prompt: "Don't have an account?"
+      signup_link: "Sign up now!"

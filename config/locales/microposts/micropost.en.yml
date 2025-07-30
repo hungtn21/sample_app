@@ -1,13 +1,18 @@
 en:
   microposts:
-    created: "Micropost was successfully created."
+    create:
+      success: "Micropost was successfully created."
+      failed: "Failed to create the micropost."
     updated: "Micropost was successfully updated."
     destroy:
-      success: "Micropost was successfully destroyed." 
+      title: "Destroy this micropost"
+      success: "Micropost was successfully destroyed."
       failed: "Failed to delete the micropost."
+      confirm: "Are you sure?"
     not_found: "Micropost not found."
     content: "Content"
     form:
+      placeholder: "Write your micropost here..."
       submit: "Save Micropost"
       errors:
         title: "%{count} error(s) prohibited this micropost from being saved:"
@@ -27,3 +32,12 @@ en:
       edit_link: "Edit this micropost"
       back_link: "Back to microposts"
       destroy: "Destroy this micropost"
+    created_at_1: "Posted "
+    created_at_2: " ago"
+  errors:
+    messages:
+      invalid_image_type: "Invalid image type. Allowed types are JPEG, GIF, and PNG."
+      file_too_large: "File is too large."
+      blank: "can't be blank"
+      too_long: "is too long (maximum %{count} characters)"
+      invalid: "is invalid"

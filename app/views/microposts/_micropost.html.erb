@@ -1,6 +1,24 @@
-<div id="<%= dom_id micropost %>">
-  <p>
-    <strong><%= t("microposts.content") %>:</strong>
-    <%= micropost.content %>
-  </p>
-</div>
+<li id="micropost-<%= micropost.id %>">
+  <div class="micropost">
+    <%= link_to gravatar_for(micropost.user, size: Settings.defaults.user.gravatar_size), micropost.user, class: "gravatar" %>
+    <div class="micropost-body">
+      <span class="user"><%= link_to micropost.user.name, micropost.user %></span><br>
+      <span class="content">
+        <div>
+          <%= micropost.content %>
+        </div>
+        <div>
+          <% if micropost.image.attached? %>
+            <%= image_tag micropost.image.variant(:display) %>
+          <% end %>
+        </div>
+      </span>
+      <span class="timestamp">
+        <%= t("microposts.created_at_1") %> <%= time_ago_in_words(micropost.created_at) %> <%= t("microposts.created_at_2") %>
+        <% if current_user? micropost.user %>
+          <%= link_to t("microposts.destroy.title"), micropost, method: :delete, data: { confirm: t("microposts.destroy.confirm") } %>
+        <% end %>
+        </span>
+    </div>
+  </div>
+</li>

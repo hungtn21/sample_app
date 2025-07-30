@@ -18,3 +18,5 @@ vi:
       description: "Đây là trang chủ của"
       link_text: "Ruby on Rails Tutorial"
       suffix: "ứng dụng mẫu."
+      signup_prompt: "Bạn chưa có tài khoản?"
+      signup_link: "Đăng ký ngay!"

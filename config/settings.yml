@@ -9,9 +9,15 @@ defaults: &defaults
     birthday_year_limit: 100
     min_password_length: 6
     items_per_page: 20
-    gravatar_size: 80
+    gravatar_size: 50
     gravatar_link: "http://gravatar.com/emails"
     password_reset_expiration: 2 # in hours
   date_formats:
     user_profile: "%B %d, %Y"
   remember_me_enabled: 1
+  micropost:
+    max_content_length: 140
+    max_image_size: 5 # in MB
+    display_size: [300, 300] 
+    image_types: ["image/jpeg", "image/gif", "image/png"]
+    accept_types: "image/jpeg,image/gif,image/png"

@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     get "static_pages/help", to: "static_pages#help", as: :static_pages_help
     get "static_pages/contact", to: "static_pages#contact", as: :static_pages_contact
     resources :products
-    resources :microposts
+    resources :microposts, only: %i(create destroy)
     resources :demo_partials
     resources :users
     resources :account_activations, only: %i(edit)
