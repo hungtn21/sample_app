@@ -14,9 +14,14 @@ Rails.application.routes.draw do
     resources :products
     resources :microposts, only: %i(create destroy)
     resources :demo_partials
-    resources :users
+    resources :users do
+      member do
+        get :following, :followers
+      end
+    end
     resources :account_activations, only: %i(edit)
     resources :password_resets, only: %i(new create edit update)
+    resources :relationships, only: %i(create destroy)
     root :to => "static_pages#home"
   end
 end

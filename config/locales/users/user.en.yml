@@ -41,3 +41,9 @@ en:
         empty: "No microposts found."
         create: "Post"
       profile: "View my profile"
+      follow: "Follow"
+      unfollow: "Unfollow"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"

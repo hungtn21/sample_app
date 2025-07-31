@@ -37,7 +37,13 @@ vi:
       confirm: "Bạn có chắc chắn muốn xóa người dùng này không?"
     show:
       microposts:
-        title: "Bài đăng"
-        empty: "Không có bài đăng nào được tìm thấy."
+        title: "Bài viết"
+        empty: "Không có bài viết nào được tìm thấy."
         create: "Đăng bài"
       profile: "Xem hồ sơ của tôi"
+      follow: "Theo dõi"
+      unfollow: "Bỏ theo dõi"
+    following:
+      title: "Đang theo dõi"
+    followers:
+      title: "Người theo dõi"
